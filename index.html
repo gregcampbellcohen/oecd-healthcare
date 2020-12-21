@@ -324,7 +324,7 @@ white-space: normal;
         map.setZoom(map.getZoom() - .2);
 
         // update map with colors via colorize
-        updateMap(dataLayer, colorize, '2001');
+        updateMap(dataLayer, colorize, '2000');
         // add year slider
         createSliderUI(dataLayer, colorize);
 
@@ -341,11 +341,14 @@ white-space: normal;
             });
             // define dynamic content of layer tooltip
             var tooltipInfo = "<b>" + props["NAME"] +
-                "</br>" +
+                "</b></br>" +
+                "In <b>" +
+                [String(currentYear)]+
+                "</b>, <b>" +
                 (props[String(currentYear)]) +
                 "% of the GDP</b> in " +
                 props["NAME"] +
-                " goes toward healthcare. Citizens live an average of <b>" +
+                " went toward healthcare. Citizens today live an average of <b>" +
                 props["LIFE"] +
                 " years</b>.";
             // update the tooltip content
