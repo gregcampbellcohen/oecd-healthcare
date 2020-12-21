@@ -269,8 +269,8 @@ white-space: normal;
             }
         });
 
-        // set breaks in rates array for coloring 10 categories ()
-        var breaks = chroma.limits(rates, 'q', 10);
+        // set breaks in rates array for coloring 8 categories ()
+        var breaks = chroma.limits(rates, 'k', 10);
         var colorize = chroma.scale(chroma.brewer.Purples).classes(breaks).mode('lab');
 
         drawMap(countries, colorize);
