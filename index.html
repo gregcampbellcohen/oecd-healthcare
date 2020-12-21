@@ -47,7 +47,7 @@
       position: absolute;
       top: 0;
       bottom: 0;
-      width: 87.5%;
+      width: 85%;
   }
 
   .leaflet-tooltip {
@@ -124,8 +124,9 @@ white-space: normal;
   }
 
   footer {
-      padding: 6px 10%;
-      width: 80%;
+      padding: 6px;
+      width: 100%;
+      float: center;
   }
 
   p {
@@ -142,11 +143,16 @@ white-space: normal;
   .max-image-width {
 			width: 100%;
 		}
+
+    .sidebar {
+        width: 15%
+    }
+    
 </style>
 </head>
 <body>
   <div class='flex-parent viewport-full relative scroll-hidden'>
-    <div class='flex-child w-full w300-ml absolute static-ml left bottom'>
+    <div class='sidebar'>
       <div class='flex-parent flex-parent--column viewport-third h-full-ml hmax-full bg-white py18 px12'>
         <div class='flex-child flex-child--grow px40 py40 scroll-auto'>
           <h1>Healthcare Costs as a Percentage of GDP in OECD Countries: 2000 &ndash; 2017</h1>
