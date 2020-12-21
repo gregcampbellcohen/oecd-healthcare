@@ -51,7 +51,7 @@
   }
 
   .leaflet-tooltip {
-min-width: 200px;
+min-width: 300px;
 font-size: 140%;
 white-space: normal;
 }
@@ -350,7 +350,13 @@ white-space: normal;
                 props["NAME"] +
                 " went toward healthcare. Citizens today live an average of <b>" +
                 props["LIFE"] +
-                " years</b>.";
+                " years</b>, and <b>"+
+                props["INFANT"] +
+                " in 1000</b> infants die under the age of one. " +
+                props["NAME"] +
+                " has <b>" +
+                props["HC"] +
+                " healthcare.</b>";
             // update the tooltip content
             layer.setTooltipContent(tooltipInfo)
 
